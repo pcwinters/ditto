@@ -1,2 +1,2 @@
-ditto
-=====
+# ditto
+### a Sails application
