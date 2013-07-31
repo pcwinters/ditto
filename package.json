@@ -1,21 +1,27 @@
 {
-    "name": "ditto",
-    "private": true,
-    "version": "0.0.0",
-    "description": "a Sails application",
-    "dependencies": {
-        "sails": "0.9.3",
-        "grunt": "0.4.1",
-        "sails-disk": "~0.9.0",
-        "ejs": "0.8.4",
-        "optimist": "0.3.4"
-    },
-    "scripts": {
-        "start": "node app.js",
-        "debug": "node debug app.js"
-    },
-    "main": "app.js",
-    "repository": "",
-    "author": "",
-    "license": ""
+  "name": "ditto",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "~3.3.4",
+    "jade": "*",
+    "racer": "~0.5.9",
+    "livedb": "~0.1.8",
+    "livedb-mongo": "~0.1.3",
+    "redis": "~0.8.4",
+    "racer-browserchannel": "~0.1.0",
+    "browserify": "~2.12.2",
+    "underscore": "",
+    "restler": ""
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-develop": "~0.1.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-coffee": "~0.7.0",
+    "request": "~2.22.0"
+  }
 }
