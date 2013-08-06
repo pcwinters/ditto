@@ -13,8 +13,8 @@ racer = require 'racer'
 redis.select 13
 liveDbClient = liveDbMongo('localhost/demo?auto_reconnect', safe: true)
 
-console.log liveDbClient.getSnapshot
-for operation in ['getSnapshot', 'getBulkSnapshots', 'queryDoc', 'writeSnapshot']
+console.log _.methods liveDbClient
+for operation in ['getSnapshot', 'getBulkSnapshots', 'queryDoc', 'setSnapshot']
 	_op = liveDbClient[operation]
 	do (_op, operation) ->
 		liveDbClient[operation] = () ->
